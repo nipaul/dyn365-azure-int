@@ -37,7 +37,7 @@ public static T Connect<T>() where T: OrganizationWebProxyClient, IOrganizationS
         };
 
         organizationService = ServiceProxyClient as IOrganizationService;
-        LogHelper.LogInfo($"CrmConnection.Connect :: Initiated a new Connection to CRM");
+        
     }
 
     if (typeof(T) == typeof(OrganizationWebProxyClient))
